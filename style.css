@@ -1,0 +1,20 @@
+/* references:
+https://stackoverflow.com/questions/22592064/how-to-align-text-below-an-image-in-css */
+
+.title {
+  text-align: center;
+}
+
+.location {
+  display: block;
+  text-align: center;
+  margin: 20px;
+}
+
+.home-photos {
+  text-align: center;
+}
+.home-photo {
+  display: inline-block;
+  margin: 20px;
+}
