@@ -84,7 +84,7 @@ img {
 
   .navbar {
     flex-direction: column;
-    align-items: ;
+    align-items: flex-start; /* keeps site name on the left side of the screen*/
   }
 
   .site-name {
