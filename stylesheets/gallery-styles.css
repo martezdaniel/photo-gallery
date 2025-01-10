@@ -57,6 +57,7 @@ img {
 
 .toggle-button {
   position: absolute; /* will be on the right side of the screen always, will not disrupt flow of other elements */
+  display: none;
 }
 
 /* responsiveness */
