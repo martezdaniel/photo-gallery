@@ -81,4 +81,8 @@ img {
   .navbar-links {
     display: none;
   }
+
+  .site-name {
+    font-size: 15px;
+  }
 }
