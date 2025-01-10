@@ -60,7 +60,6 @@ img {
   /* top and right will help set the position of the toggle button */
   top: 25px;
   right: 20px;
-  padding: 10px;
   display: none;
   flex-direction: column; /* will stack the three lines on top of each other */
   justify-content: space-between;
@@ -74,3 +73,12 @@ img {
 }
 
 /* responsiveness */
+@media (max-width: 700px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+}
