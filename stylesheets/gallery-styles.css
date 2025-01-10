@@ -58,9 +58,8 @@ img {
 .toggle-button {
   position: absolute; /* will be on the right side of the screen always, will not disrupt flow of other elements */
   /* top and right will help set the position of the toggle button */
-  top: 10px;
+  top: 30px;
   right: 20px;
-  bottom: 10px;
   display: flex;
   flex-direction: column; /* will stack the three lines on top of each other */
   justify-content: space-between;
