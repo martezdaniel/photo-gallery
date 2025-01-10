@@ -59,6 +59,9 @@ img {
   position: absolute; /* will be on the right side of the screen always, will not disrupt flow of other elements */
   display: flex;
   flex-direction: column; /* will stack the three lines on top of each other */
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
 }
 .toggle-button .bar {
   width: 100%;
