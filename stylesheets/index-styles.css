@@ -1,20 +1,67 @@
 /* references:
-https://stackoverflow.com/questions/22592064/how-to-align-text-below-an-image-in-css */
+https://stackoverflow.com/questions/22592064/how-to-align-text-below-an-image-in-css
+https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive
+https://www.youtube.com/watch?v=h2x4YTI6WeE
+https://www.w3schools.com/css/css_positioning.asp
+https://www.w3schools.com/css/tryit.asp?filename=trycss_link
+(chatgpt assistance transcript) https://chatgpt.com/share/678097d7-6f30-8007-8d8d-0dec043aa802
+used copilot assistance as well for card shadows and relative positioning in page title and footer (as well as w3 article for understanding)
+*/
+
+body {
+  background-color: rgb(245, 252, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
 .title {
   text-align: center;
-}
-
-.location {
-  display: block;
-  text-align: center;
+  position: relative;
   margin: 20px;
+  padding: 10px;
 }
 
 .home-photos {
-  text-align: center;
+  /* flex-wrap included which makes it easier to wrap the images on smaller screen sizes making it more responsive */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
 }
 .home-photo {
   display: inline-block;
   margin: 20px;
+}
+.card {
+  border: 1px solid black;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+.location {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
+}
+.location-link{
+  text-decoration: none;
+  color: black;
+}
+
+.about {
+  margin: 30px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+  position: relative;
+  font-size: 18px;
 }
