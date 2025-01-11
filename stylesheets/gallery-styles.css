@@ -14,6 +14,10 @@ https://www.youtube.com/watch?v=At4B7A4GOPg (for responsive navbar)
   margin: 20px;
   font-size: 20px;
 }
+.site-name a {
+  text-decoration: none;
+  color: black;
+}
 .navbar-links ul {
   display: flex;
 }
@@ -107,8 +111,6 @@ img {
 
   .site-name a {
     font-size: 15px;
-    text-decoration: none;
-    color: black;
   }
 
   /* gallery responsiveness */
