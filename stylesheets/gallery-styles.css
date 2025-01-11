@@ -74,7 +74,9 @@ img {
 }
 
 /* responsiveness */
+
 @media (max-width: 700px) {
+  /* nav bar responsiveness */
   .toggle-button {
     display: flex;
   }
@@ -104,4 +106,6 @@ img {
   .site-name {
     font-size: 15px;
   }
+
+  /* gallery responsiveness */
 }
