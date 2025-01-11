@@ -4,3 +4,8 @@
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 // gets the element from the class with the navigation bar
 const navBarLinks = document.getElementsByClassName('navbar-links')[0];
+
+toggleButton.addEventListener('click', () => {
+    navBarLinks.classList.toggle('active');
+    // when the icon is clicked, the 
+})
