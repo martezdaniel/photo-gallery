@@ -10,6 +10,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg (for responsive navbar)
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .site-name {
   margin: 20px;
   font-size: 20px;
@@ -18,6 +19,10 @@ https://www.youtube.com/watch?v=At4B7A4GOPg (for responsive navbar)
   text-decoration: none;
   color: black;
 }
+.site-name a:hover {
+  color: rgb(0, 89, 166);
+}
+
 .navbar-links ul {
   display: flex;
 }
