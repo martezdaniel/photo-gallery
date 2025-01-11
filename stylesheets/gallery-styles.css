@@ -95,9 +95,6 @@ img {
   .navbar-links li {
     text-align: center;
   }
-  .navbar-links a {
-    width: 100%;
-  }
 
   .navbar {
     flex-direction: column;
