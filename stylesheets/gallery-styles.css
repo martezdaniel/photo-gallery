@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg (for responsive navbar)
   color: black;
 }
 .navbar-links li:hover {
-  color: rgb(0, 89, 166);
+  background-color: rgb(0, 89, 166);
 }
 
 body {
