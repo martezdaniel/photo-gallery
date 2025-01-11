@@ -85,13 +85,14 @@ img {
   }
   .active {
     display: flex;
+    flex-direction: column; /* helps center the text in the nav bar items */
   }
 
   .navbar-links ul {
     flex-direction: column;
   }
 
-    .navbar-links li {
+  .navbar-links li {
     text-align: center;
   }
 
