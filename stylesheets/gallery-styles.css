@@ -107,6 +107,8 @@ img {
 
   .site-name {
     font-size: 15px;
+    text-decoration: none;
+    color: black;
   }
 
   /* gallery responsiveness */
