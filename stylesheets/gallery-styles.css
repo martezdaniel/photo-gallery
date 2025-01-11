@@ -83,6 +83,9 @@ img {
     display: none;
     width: 100%;
   }
+  .active {
+    display: flex;
+  }
 
   .navbar-links ul {
     flex-direction: column;
