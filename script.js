@@ -7,5 +7,5 @@ const navBarLinks = document.getElementsByClassName('navbar-links')[0];
 
 toggleButton.addEventListener('click', () => {
     navBarLinks.classList.toggle('active');
-    // when the icon is clicked, the 
+    // when the icon is clicked, the active class will be toggled on if it isn't already, meaning that nav bar will appear
 })
