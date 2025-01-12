@@ -96,6 +96,8 @@ img {
     display: none;
     width: 100%;
   }
+
+  /* active class that will be toggled on and off when the hamburger icon is clicked */
   .active {
     display: flex;
     flex-direction: column; /* helps center the text in the nav bar items */
