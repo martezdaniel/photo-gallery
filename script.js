@@ -26,6 +26,6 @@ const images = document.querySelectorAll('.gallery-grid img');
 // for each image in the gallery, add a click event listener that will toggle the lightbox for each image //
 images.forEach(image => {
     image.addEventListener('click', e => {
-        lightbox.toggle('active');
+        lightbox.classList.toggle('active');
     })
 })
