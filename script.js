@@ -22,3 +22,5 @@ document.body.appendChild(lightbox); // appends the lightbox to the end of the d
 
 // selects all the images from the gallery-grid class so the code only affects the images from the galleries
 const images = document.querySelectorAll('.gallery-grid img');
+
+// finish here with adding the click event listener and the function for the user to toggle the lightbox when they click an image //
