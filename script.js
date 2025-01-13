@@ -12,3 +12,10 @@ toggleButton.addEventListener('click', () => {
     navBarLinks.classList.toggle('active');
     // when the icon is clicked, the active class will be toggled on if it isn't already, meaning that nav bar will appear, and vice-versa
 })
+
+// code for the lightbox effect for the gallery images //
+
+// creating the div element using DOM manipulation which will make it easier when coding the functionality and to ensure it works on every gallery page
+const lightbox = document.createElement('div');
+lightbox.id = 'lightbox';
+document.body.appendChild(lightbox); // appends the lightbox to the end of the document body
