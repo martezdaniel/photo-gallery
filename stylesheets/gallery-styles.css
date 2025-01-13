@@ -103,7 +103,7 @@ img {
   height: 100%;
   /* z-index of 1000 will ensure that the lightbox is layered over all other elements */
   z-index: 1000;
-  background-color: black, 0.8;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* responsiveness */
