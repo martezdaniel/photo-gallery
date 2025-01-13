@@ -18,4 +18,4 @@ toggleButton.addEventListener('click', () => {
 // creating the div element using DOM manipulation which will make it easier when coding the functionality and to ensure it works on every page
 const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
-document.body.appendChild(lightbox);
+document.body.appendChild(lightbox); // appends the lightbox to the end of the document body
