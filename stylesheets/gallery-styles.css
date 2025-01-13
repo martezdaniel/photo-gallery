@@ -109,6 +109,7 @@ img {
 
 #lightbox.active {
   display: flex;
+  /* this will always keep the image in the center of the page */
   justify-content: center;
   align-items: center;
 }
