@@ -93,6 +93,12 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* lightbox styling */
+
+#lightbox {
+  position: fixed; /* fixed position will ensure that the lightbox stays in the same spot no matter where we are on the page */
+}
+
 /* responsiveness */
 
 @media (max-width: 700px) {
