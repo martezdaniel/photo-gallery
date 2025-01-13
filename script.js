@@ -34,3 +34,5 @@ images.forEach(image => {
         lightbox.appendChild(img);
     })
 })
+
+// event listener for when the lightbox area or the close indicator is clicked, it will remove the active lightbox
