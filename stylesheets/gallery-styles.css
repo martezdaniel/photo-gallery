@@ -107,6 +107,12 @@ img {
   display: none; /* display is set to none until the lightbox effect is toggled when the user clicks on an image (similar to the nav bar effect) */
 }
 
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* responsiveness */
 
 @media (max-width: 700px) {
