@@ -1,5 +1,6 @@
 // reference for navbar javascript: https://www.youtube.com/watch?v=At4B7A4GOPg https://www.w3schools.com/howto/howto_js_topnav.asp
 // reference for lightbox effect: https://www.youtube.com/watch?v=uKVVSwXdLr0
+// for a refresher on adding class names to dom elements: https://stackoverflow.com/questions/1115310/how-can-i-add-a-class-to-a-dom-element-in-javascript
 
 // code for the hamburger toggle button in the nav bar (for mobile view) //
 
