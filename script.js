@@ -28,5 +28,6 @@ images.forEach(image => {
     image.addEventListener('click', e => {
         lightbox.classList.toggle('active');
         const img = document.createElement('img'); // creating a new image element which will be the selected image in the lightbox
+        img.src = img.src
     })
 })
