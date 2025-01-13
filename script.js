@@ -15,7 +15,7 @@ toggleButton.addEventListener('click', () => {
 
 // code for the lightbox effect for the gallery images //
 
-// creating the div element using DOM to make it easier to select when using JS
+// creating the div element using DOM manipulation which will make it easier when coding the functionality and to ensure it works on every page
 const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
 document.body.appendChild(lightbox);
