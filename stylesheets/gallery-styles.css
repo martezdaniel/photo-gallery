@@ -108,6 +108,7 @@ img {
 }
 
 #lightbox.active {
+  /* display is set to flex to make the lightbox and it's content responsive */
   display: flex;
   /* this will always keep the image in the center of the page */
   justify-content: center;
