@@ -116,9 +116,9 @@ img {
   align-items: center;
 }
 
-#lightbox.img {
-  width: 50%;
-  height: 50%;
+.lightbox-img {
+  width: 80%;
+  height: 80%;
 }
 
 /* responsiveness */
