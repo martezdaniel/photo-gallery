@@ -19,3 +19,5 @@ toggleButton.addEventListener('click', () => {
 const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
 document.body.appendChild(lightbox); // appends the lightbox to the end of the document body
+
+const images = document.querySelectorAll('.gallery img'); // selects all the images in the gallery
