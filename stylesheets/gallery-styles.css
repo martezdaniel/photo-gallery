@@ -86,7 +86,7 @@ body {
     grid-template-rows: repeat(4,auto);
     grid-gap: 10px;
     padding: 10px;
-    cursor: pointer; /* */
+    cursor: pointer; /* the cursor will now indicate that the images are clickable */
 }
 
 img {
