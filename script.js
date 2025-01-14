@@ -1,7 +1,9 @@
 // reference for navbar javascript: https://www.youtube.com/watch?v=At4B7A4GOPg https://www.w3schools.com/howto/howto_js_topnav.asp
 // reference for lightbox effect: https://www.youtube.com/watch?v=uKVVSwXdLr0
 // for a refresher on adding class names to dom elements: https://stackoverflow.com/questions/1115310/how-can-i-add-a-class-to-a-dom-element-in-javascript
-// for understanding css :target https://www.w3schools.com/cssref/sel_target.php
+// for understanding js event.target: https://www.w3schools.com/jsref/event_target.asp
+// updated transcript for better understanding of lightbox event listener function: https://chatgpt.com/share/678097d7-6f30-8007-8d8d-0dec043aa802
+// refresher for concept of firstChild: https://www.w3schools.com/cssref/sel_firstchild.php
 
 // code for the hamburger toggle button in the nav bar (for mobile view) //
 
@@ -32,8 +34,26 @@ images.forEach(image => {
         const img = document.createElement('img'); // creating a new image element which will be the selected image in the lightbox
         img.className = 'lightbox-img'; // giving the lightbox image a class name to fix image sizing within the lightbox
         img.src = image.src // this will ensure that the source of the image variable is the same as the image source that the user clicks on
+
+        // if the firstChild of the lightbox div already exists, then it will be removed to append the image that was clicked on
+        // this will prevent multiple images display when the user clicks on another image after the first one
+        if (lightbox.firstChild) {
+            lightbox.removeChild(lightbox.firstChild);
+        }
         lightbox.appendChild(img);
     })
 })
 
 // event listener for when the lightbox area or the close indicator is clicked, it will remove the active lightbox
+// the currentTarget in this is the lightbox, and the target is the image
+lightbox.addEventListener('click', e => {
+    if (e.target !== e.currentTarget) {
+        return;
+        // if the user clicks on the image, the lightbox will stay active
+        // using return will not exit the event handler, but instead will ensure the lightbox still shows when the image is clicked
+    }
+    else {
+        lightbox.classList.remove('active');
+        // if the user clicks in the lightbox area, then the lightbox effect will be removed
+    }
+})
