@@ -4,6 +4,8 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive
 https://www.youtube.com/watch?v=h2x4YTI6WeE
 https://www.w3schools.com/css/css_positioning.asp
 https://www.w3schools.com/css/tryit.asp?filename=trycss_link
+https://www.w3schools.com/css/css3_transitions.asp
+https://www.w3schools.com/howto/howto_css_zoom_hover.asp
 (chatgpt assistance transcript) https://chatgpt.com/share/678097d7-6f30-8007-8d8d-0dec043aa802
 used copilot assistance as well for card shadows and relative positioning in page title and footer (as well as w3 article for understanding)
 */
@@ -39,6 +41,10 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
+  transition: transform 2s;
+}
+.card:hover {
+  transform: scale(1.1);
 }
 .location {
   display: block;
