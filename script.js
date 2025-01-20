@@ -32,10 +32,6 @@ images.forEach(image => {
     image.addEventListener('click', e => {
         lightbox.classList.toggle('active');
 
-        const closeButton = document.createElement('button'); // creating the close button for the lightbox
-        closeButton.textContent = "Close";
-        lightbox.appendChild(closeButton);
-
         const img = document.createElement('img'); // creating a new image element which will be the selected image in the lightbox
         img.className = 'lightbox-img'; // giving the lightbox image a class name to fix image sizing within the lightbox
         img.src = image.src // this will ensure that the source of the image variable is the same as the image source that the user clicks on
@@ -46,6 +42,10 @@ images.forEach(image => {
             lightbox.removeChild(lightbox.firstChild);
         }
         lightbox.appendChild(img);
+
+        const closeButton = document.createElement("button"); // creating the close button for the lightbox
+        closeButton.textContent = "Close";
+        lightbox.appendChild(closeButton);
     })
 })
 
