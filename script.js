@@ -34,10 +34,11 @@ images.forEach((image) => {
         const closeButtonDiv = document.createElement("div");
         closeButtonDiv.id = "close-button-div";
         lightbox.appendChild(closeButtonDiv);
+
         const closeButton = document.createElement("button");
         closeButton.textContent = "Close";
         closeButton.className = "close-button";
-        lightbox.appendChild(closeButton);
+        closeButtonDiv.appendChild(closeButton);
 
         const img = document.createElement("img");
         img.src = image.src;
