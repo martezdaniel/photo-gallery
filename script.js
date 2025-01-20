@@ -60,3 +60,4 @@ lightbox.addEventListener('click', e => {
 })
 
 // selecting the images may require a spread operator to put them in an array so i can do both the lightbox and the gallery effect
+// we can still keep the event listener which closes the lightbox when user clicks outside the image area
