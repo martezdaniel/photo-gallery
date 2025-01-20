@@ -25,4 +25,5 @@ lightbox.id = 'lightbox';
 document.body.appendChild(lightbox); // appends the lightbox to the end of the document body
 
 // selecting the images may require a spread operator to put them in an array so i can do both the lightbox and the gallery effect
+// for each for each image that will 
 const images = [...document.querySelectorAll('.gallery img')];
