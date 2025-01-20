@@ -4,6 +4,7 @@
 // for understanding js event.target: https://www.w3schools.com/jsref/event_target.asp
 // updated transcript for better understanding of lightbox event listener function: https://chatgpt.com/share/678097d7-6f30-8007-8d8d-0dec043aa802
 // refresher for concept of firstChild: https://www.w3schools.com/cssref/sel_firstchild.php
+// refresher on using DOM to create a link tag: https://stackoverflow.com/questions/4772774/how-do-i-create-a-link-using-javascript
 
 // code for the hamburger toggle button in the nav bar (for mobile view) //
 
@@ -38,6 +39,8 @@ images.forEach((image) => {
         const closeButton = document.createElement("a");
         closeButton.innerText = "Close";
         closeButton.className = "close-button";
+        closeButton.title = "Close";
+        closeButton.href = "#";
         closeButtonDiv.appendChild(closeButton);
 
         const imgDiv = document.createElement("div");
