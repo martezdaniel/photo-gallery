@@ -35,7 +35,7 @@ images.forEach((image) => {
         closeButtonDiv.id = "close-button-div";
         lightbox.appendChild(closeButtonDiv);
 
-        const closeButton = document.createElement("button");
+        const closeButton = document.createElement("a");
         closeButton.textContent = "Close";
         closeButton.className = "close-button";
         closeButtonDiv.appendChild(closeButton);
