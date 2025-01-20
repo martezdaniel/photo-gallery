@@ -31,7 +31,9 @@ const images = document.querySelectorAll('.gallery-grid img');
 images.forEach(image => {
     image.addEventListener('click', e => {
         lightbox.classList.toggle('active');
+
         const closeButton = document.createElement('button'); // creating the close button for the lightbox
+        closeButton.textContent = "Close";
         
         const img = document.createElement('img'); // creating a new image element which will be the selected image in the lightbox
         img.className = 'lightbox-img'; // giving the lightbox image a class name to fix image sizing within the lightbox
