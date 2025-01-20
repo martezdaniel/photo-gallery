@@ -58,3 +58,5 @@ lightbox.addEventListener('click', e => {
         // if the user clicks in the lightbox area, then the lightbox effect will be removed
     }
 })
+
+// 
