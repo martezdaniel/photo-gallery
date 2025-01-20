@@ -31,6 +31,7 @@ images.forEach((image) => {
         lightbox.classList.toggle("active"); // once the image is clicked the lightbox effect will be actively toggled
 
         // creating the close button that will appear in the right corner just above the image in the lightbox
+        const closeButtonDiv = document.createElement("div");
         const closeButton = document.createElement("button");
         closeButton.textContent = "Close";
         closeButton.className = "close-button";
