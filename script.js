@@ -19,34 +19,20 @@ toggleButton.addEventListener('click', () => {
 
 // code for the lightbox effect for the gallery images //
 
-const images = document.querySelectorAll(".gallery-grid img");
+// creating the div element using DOM manipulation which will make it easier when coding the functionality and to ensure it works on every gallery page
+const lightbox = document.createElement('div');
+lightbox.id = 'lightbox';
+document.body.appendChild(lightbox); // appends the lightbox to the end of the document body
 
-// for each image in the gallery, add a click event listener that will toggle the lightbox containing the image for each image //
-images.forEach((image) => {
-  image.addEventListener("click", (e) => {
-    lightbox.classList.toggle("active");
-    const img = document.createElement("img"); // creating a new image element which will be the selected image in the lightbox
-    img.className = "lightbox-img"; // giving the lightbox image a class name to fix image sizing within the lightbox
-    img.src = image.src; // this will ensure that the source of the image variable is the same as the image source that the user clicks on
+// selecting the images may require a spread operator to put them in an array so i can do both the lightbox and the gallery effect
+// for each for each image that will be clicked on will show the individual image, as well as the close button and the arrows for navigation
+const images = [...document.querySelectorAll('.gallery img')];
 
-    // if the firstChild of the lightbox div already exists, then it will be removed to append the image that was clicked on
-    // this will prevent multiple images display when the user clicks on another image after the first one
-    if (lightbox.firstChild) {
-      lightbox.removeChild(lightbox.firstChild);
-    }
-    lightbox.appendChild(img);
-  });
-});
-
-// event listener for when the lightbox area or the close indicator is clicked, it will remove the active lightbox
-// the currentTarget in this is the lightbox, and the target is the image
-lightbox.addEventListener("click", (e) => {
-  if (e.target !== e.currentTarget) {
-    return;
-    // if the user clicks on the image, the lightbox will stay active
-    // using return will not exit the event handler, but instead will ensure the lightbox still shows when the image is clicked
-  } else {
-    lightbox.classList.remove("active");
-    // if the user clicks in the lightbox area, then the lightbox effect will be removed
-  }
-});
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        lightbox.classList.toggle('active');
+        const img = document.createElement('img');
+        img.src = image.src;
+        lightbox.appendChild(img);
+    })
+})
