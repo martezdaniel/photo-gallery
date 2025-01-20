@@ -30,7 +30,7 @@ const images = [...document.querySelectorAll('.gallery img')];
 
 images.forEach(image => {
     image.addEventListener('click', e => {
-        lightbox.classList.add('active');
+        lightbox.classList.toggle('active');
         const img = document.createElement('img');
         img.src = image.src;
     })
