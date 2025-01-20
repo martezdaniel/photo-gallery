@@ -24,4 +24,4 @@ const lightbox = document.createElement("div");
 lightbox.id = "lightbox";
 document.body.appendChild(lightbox); // appends the lightbox to the end of the document body
 
-
+const images = [...document.querySelectorAll(".gallery-grid img")]; // gets all images in the gallery-grid and puts them into an array
