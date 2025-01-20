@@ -33,5 +33,6 @@ images.forEach(image => {
         lightbox.classList.toggle('active');
         const img = document.createElement('img');
         img.src = image.src;
+        lightbox.appendChild(img);
     })
 })
