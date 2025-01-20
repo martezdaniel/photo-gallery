@@ -42,10 +42,6 @@ images.forEach(image => {
             lightbox.removeChild(lightbox.firstChild);
         }
         lightbox.appendChild(img);
-
-        const closeButton = document.createElement("button"); // creating the close button for the lightbox
-        closeButton.textContent = "Close";
-        lightbox.appendChild(closeButton);
     })
 })
 
