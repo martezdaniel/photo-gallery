@@ -29,8 +29,10 @@ const images = [...document.querySelectorAll(".gallery-grid img")]; // gets all 
 images.forEach((image) => {
     image.addEventListener("click", e => {
         lightbox.classList.toggle("active"); // once the image is clicked the lightbox effect will be actively toggled
-        
+
         // creating the close button that will appear in the right corner just above the image in the lightbox
         const closeButton = document.createElement("button");
+        closeButton.classList.add("close-button");
+        lightbox.appendChild(closeButton);
     })
 })
