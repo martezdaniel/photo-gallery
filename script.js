@@ -32,7 +32,7 @@ images.forEach((image) => {
 
         // creating the close button that will appear in the right corner just above the image in the lightbox
         const closeButton = document.createElement("button");
-        closeButton.classList.add("close-button");
+        closeButton.className = "close-button";
         lightbox.appendChild(closeButton);
     })
 })
