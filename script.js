@@ -28,6 +28,8 @@ const images = [...document.querySelectorAll(".gallery-grid img")]; // gets all 
 
 images.forEach((image) => {
     image.addEventListener("click", e => {
-        lightbox.classList.toggle("active"); // toggles the active class on the lightbox div
+        lightbox.classList.toggle("active"); // once the image is clicked the lightbox effect will be actively toggled
+        
+        const closeButton = document.createElement("button");
     })
 })
