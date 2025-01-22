@@ -27,16 +27,16 @@ document.body.appendChild(lightbox); // appends the lightbox to the end of the d
 
 const images = [...document.querySelectorAll(".gallery-grid img")]; // gets all images in the gallery-grid and puts them into an array
 
-// creating the close button that will appear in the right corner just above the image in the lightbox
+// creating the close button
 const closeButtonDiv = document.createElement("div");
 closeButtonDiv.id = "close-button-div";
-
 const closeButton = document.createElement("a");
 closeButton.innerText = "Close";
 closeButton.className = "close-button";
 closeButton.title = "Close";
 closeButton.href = "#";
 
+// create the image div and the image element
 const imgDiv = document.createElement("div");
 imgDiv.className = "lightbox-img";
 const img = document.createElement("img");
