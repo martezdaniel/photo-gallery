@@ -36,10 +36,14 @@ closeButton.className = "close-button";
 closeButton.title = "Close";
 closeButton.href = "#";
 
+//creating the back and forward arrows in the gallery
+
 // create the image div and the image element
 const imgDiv = document.createElement("div");
 imgDiv.className = "lightbox-img";
 const img = document.createElement("img");
+
+// function for the gallery effect to include in the forEach loop
 
 images.forEach((image) => {
     image.addEventListener("click", e => {
