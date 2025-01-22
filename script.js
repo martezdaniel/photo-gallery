@@ -31,16 +31,16 @@ const images = [...document.querySelectorAll(".gallery-grid img")]; // gets all 
 const closeButtonDiv = document.createElement("div");
 closeButtonDiv.id = "close-button-div";
 
+const closeButton = document.createElement("a");
+closeButton.innerText = "Close";
+closeButton.className = "close-button";
+closeButton.title = "Close";
+closeButton.href = "#";
+
 images.forEach((image) => {
     image.addEventListener("click", e => {
         lightbox.classList.toggle("active"); // once the image is clicked the lightbox effect will be actively toggled
         lightbox.appendChild(closeButtonDiv);
-
-        const closeButton = document.createElement("a");
-        closeButton.innerText = "Close";
-        closeButton.className = "close-button";
-        closeButton.title = "Close";
-        closeButton.href = "#";
         closeButtonDiv.appendChild(closeButton);
 
         const imgDiv = document.createElement("div");
