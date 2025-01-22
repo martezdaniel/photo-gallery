@@ -27,13 +27,13 @@ document.body.appendChild(lightbox); // appends the lightbox to the end of the d
 
 const images = [...document.querySelectorAll(".gallery-grid img")]; // gets all images in the gallery-grid and puts them into an array
 
+// creating the close button that will appear in the right corner just above the image in the lightbox
+const closeButtonDiv = document.createElement("div");
+closeButtonDiv.id = "close-button-div";
+
 images.forEach((image) => {
     image.addEventListener("click", e => {
         lightbox.classList.toggle("active"); // once the image is clicked the lightbox effect will be actively toggled
-
-        // creating the close button that will appear in the right corner just above the image in the lightbox
-        const closeButtonDiv = document.createElement("div");
-        closeButtonDiv.id = "close-button-div";
         lightbox.appendChild(closeButtonDiv);
 
         const closeButton = document.createElement("a");
