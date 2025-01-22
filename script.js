@@ -37,15 +37,15 @@ closeButton.className = "close-button";
 closeButton.title = "Close";
 closeButton.href = "#";
 
+const imgDiv = document.createElement("div");
+imgDiv.className = "lightbox-img";
+const img = document.createElement("img");
+
 images.forEach((image) => {
     image.addEventListener("click", e => {
         lightbox.classList.toggle("active"); // once the image is clicked the lightbox effect will be actively toggled
         lightbox.appendChild(closeButtonDiv);
         closeButtonDiv.appendChild(closeButton);
-
-        const imgDiv = document.createElement("div");
-        imgDiv.className = "lightbox-img";
-        const img = document.createElement("img");
         img.src = image.src;
         imgDiv.appendChild(img);
         lightbox.appendChild(imgDiv);
