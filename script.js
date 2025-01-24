@@ -63,7 +63,7 @@ closeButtonDiv.addEventListener("click", e => {
 
 // additive event listener to exit lightbox when outside of image is clicked
 lightbox.addEventListener("click", e => {
-  if (e.target !== e.currentTarget) { // if the target (is not the image)
+  if (e.target !== e.currentTarget) { // if the target ()
     return;
   }
   lightbox.classList.remove("active");
