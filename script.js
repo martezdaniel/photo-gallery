@@ -55,3 +55,16 @@ images.forEach((image) => {
         lightbox.appendChild(imgDiv);
     })
 })
+
+// function for the close button
+closeButtonDiv.addEventListener("click", e => {
+  lightbox.classList.remove("active");
+})
+
+// additive event listener to exit lightbox when outside of image is clicked
+lightbox.addEventListener("click", e => {
+  if (e.target !== e.currentTarget) {
+    return;
+  }
+  lightbox.classList.remove("active");
+})

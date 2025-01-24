@@ -122,7 +122,18 @@ img {
 
 .lightbox-img {
   width: 55%;
-  height: 75%;
+  height: auto;
+}
+
+#close-button-div {
+  position: absolute; /* the close button will always be on the right side no matter the screen size */
+  top: 10px;
+  right: 20px;
+}
+#close-button-div a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
 }
 
 /* responsiveness */
@@ -166,6 +177,13 @@ img {
     grid-template-columns: auto auto;
     grid-template-rows: repeat(4, auto);
   }
+
+  .lightbox-img {
+  /* maintaining the aspect ratio while also making the width not too narrow, but not entirely too wide to keep image in the middle*/
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+}
 }
 
 @media (max-width: 500px) {
