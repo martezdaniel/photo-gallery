@@ -2,6 +2,7 @@
 // reference for lightbox effect: https://www.youtube.com/watch?v=uKVVSwXdLr0
 // for a refresher on adding class names to dom elements: https://stackoverflow.com/questions/1115310/how-can-i-add-a-class-to-a-dom-element-in-javascript
 // for understanding js event.target: https://www.w3schools.com/jsref/event_target.asp
+// js currentTarget: https://www.w3schools.com/jsref/event_currenttarget.asp
 // updated transcript for better understanding of lightbox event listener function: https://chatgpt.com/share/678097d7-6f30-8007-8d8d-0dec043aa802
 // refresher for concept of firstChild: https://www.w3schools.com/cssref/sel_firstchild.php
 // refresher on using DOM to create a link tag: https://stackoverflow.com/questions/4772774/how-do-i-create-a-link-using-javascript
