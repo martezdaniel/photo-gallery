@@ -135,6 +135,9 @@ img {
   font-size: 30px;
   color: white;
 }
+#close-button-div a:hover {
+  color: lightgray;
+}
 
 /* responsiveness */
 
