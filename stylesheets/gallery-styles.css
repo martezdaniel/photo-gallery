@@ -30,6 +30,7 @@ https://stackoverflow.com/questions/16163922/css3-transition-ease-in-and-out-box
 .site-name a {
   text-decoration: none;
   color: black;
+  transition: color 0.3s;
 }
 .site-name a:hover {
   color: rgb(0, 89, 166);
@@ -46,6 +47,7 @@ https://stackoverflow.com/questions/16163922/css3-transition-ease-in-and-out-box
   text-decoration: none;
   color: black;
   padding: 16px;
+  transition: color 0.3s;
 }
 .navbar-links a:hover {
   color: rgb(0, 89, 166);
