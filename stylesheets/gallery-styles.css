@@ -141,6 +141,7 @@ img {
   text-decoration: none;
   font-size: 30px;
   color: white;
+  transition: color 0.3s;
 }
 #close-button-div a:hover {
   color: lightgray;
