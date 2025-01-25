@@ -95,7 +95,7 @@ img {
 }
 
 .gallery-grid img {
-  
+  transition: box-shadow 0.3s;
 }
 
 .gallery-grid img:hover {
