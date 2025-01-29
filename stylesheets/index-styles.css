@@ -88,8 +88,12 @@ body {
 /* responsivness */
 
 @media (max-width: 500px) {
+  .home-photo img {
+    width: 100%;
+    height: auto;
+  }
   .home-photos {
     grid-template-columns: auto;
-    grid-template-rows: repeat(4, 400px);
+    grid-template-rows: repeat(4, auto);
   }
 }
