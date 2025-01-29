@@ -9,8 +9,10 @@ used this for when zoom transition was for cards on home page (now changed to bo
 https://www.w3schools.com/css/css3_transitions.asp
 https://www.w3schools.com/howto/howto_css_zoom_hover.asp
 
-explanation for forwards: https://www.w3schools.com/css/css3_animations.asp
+explanation for @keyframes and forwards feature used in fadeIn animation for body: 
+https://www.w3schools.com/css/css3_animations.asp
 https://elementor.com/blog/css-fade-in/
+
 (chatgpt assistance transcript) https://chatgpt.com/share/678097d7-6f30-8007-8d8d-0dec043aa802
 used copilot assistance as well for card shadows and relative positioning in page title and footer (as well as w3 article for understanding)
 */
@@ -22,7 +24,7 @@ used copilot assistance as well for card shadows and relative positioning in pag
   to {
     opacity: 1;
   }
-  }
+}
 
 body {
   background-color: rgb(245, 252, 255);
@@ -68,7 +70,7 @@ body {
   font-size: 20px;
   margin: 20px;
 }
-.location-link{
+.location-link {
   text-decoration: none;
   color: black;
 }
