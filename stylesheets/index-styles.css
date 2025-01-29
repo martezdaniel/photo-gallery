@@ -84,3 +84,12 @@ body {
   position: relative;
   font-size: 18px;
 }
+
+/* responsivness */
+
+@media (max-width: 500px) {
+  .home-photos {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+}
