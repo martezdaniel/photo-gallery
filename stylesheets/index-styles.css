@@ -96,4 +96,8 @@ body {
     grid-template-rows: repeat(4, auto);
   }
 
+  .home-photo-card {
+    width: 55%;
+    height: auto;
+  }
 }
