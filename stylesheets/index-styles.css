@@ -47,6 +47,7 @@ body {
 .home-photo {
   display: inline-block;
   margin: 20px;
+  height: 300px; /* this will match up with the height of the image */
 }
 .card {
   border: 1px solid black;
