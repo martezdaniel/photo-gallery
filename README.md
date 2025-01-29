@@ -4,4 +4,6 @@ This is project that I created to demonstrate my skills using HTML, CSS, and Jav
 
 This project is developed and designed for both desktop and mobile view, and will be updated in the future with more galleries and possibly with updated designs and features.
 
-Feel free to view my code in this repo to view what sources I used to help me along to way, as well as my comments throughout my CSS and JS code that explain the purpose of what my code does.
+Feel free to view my code in this repository. Sources I used to help me along the way are in both my CSS files, and in my JavaScript file. I've also provided comments within parts of my code to explain the purpose of what the code does.
+
+Thank you for checking out my work!
